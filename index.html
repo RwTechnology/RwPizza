@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="shortcut icon" href="./image/pizza-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/headerBanner.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>RALOTCHIN-PIZZA</title>
+</head>
+
+<body>
+    <div class="headerBanner">
+
+        <div class="logo">
+            <span class="R">R</span><span class="A">A</span><span class="L">L</span><span class="O">O</span>
+            <span class="T">T</span><span class="C">C</span><span class="H">H</span><span class="I">I</span><span
+                class="N">N</span>
+            <span><img src="./image/pizza-1.png" id="logo"></span>
+            <span class="_P">P</span><span class="_I">I</span><span class="_Z">Z</span><span class="_Z">Z</span><span
+                class="_A">A</span>
+        </div>
+        <div class="bars">
+            <button id="afficherMenu"><i class="fas fa-bars"></i></button>
+            <button id="disparaitreMenu" style="display: none;"><i class="fas fa-times"></i></button>
+        </div>
+
+        <nav id="barMenu">
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li class="menuItem"><a href="#menuSpecial">CATEGORIES</a></li>
+                <li><a href="./maison_pizza.html">MAISON_PIZZA</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./loisirs.html">LOISIRS</a></li>
+                <li><i class="fas fa-shopping-basket"></i> $<a href="commander.html" id="montantIndex">00.00</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+
+            <div id="slide">
+
+                <div class="contenuSlide">
+                    <div class="image">
+                        <img src="./image/banner/pizza-9.png">
+                    </div>
+
+                    <div class="text">
+                        <p class="p_1">
+                            PIZZA DE QUA<span class="p_1_mode">LIT</span>E
+                        </p>
+                        <p class="p_2">
+                            Reservez chez-nous votre pizza pour une santé parfaite,car <span
+                                class="p_2_mode1">90%</span> de nos ingrédients sont <span
+                                class="p_2_mode2">Naturel</span>
+                            <span class="p_2_mode3">.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contenuSlideUn" style="display: none;">
+
+                    <div class="text" id="S2">
+                        <p class="p_1">
+                            DES PRODUITS <span class="p_1_mode">FRAIS</span> ET <span class="p_2_mode2">LOCAUX</span>
+                        </p>
+                        <p class="p_2">
+                            Nos pizzas sont de véritables plats cuisinés confectionnés avec des <span
+                                class="p_2_mode2">ingrédients</span>
+                            choisis soigneusement,des produits frais de qualité.Notre equipe reste à votre écoute pour
+                            toute <span class="p_2_mode1">demande spéciale</span> <span class="p_2_mode3">.</span>
+
+                        </p>
+                    </div>
+
+                    <div class="image">
+                        <img src="./image/banner/pizza-4.png">
+                    </div>
+                </div>
+
+                <div class="contenuSlideDeux" style="display: none;">
+                    <div class="image">
+                        <img src="./image/banner/pizza-1.png">
+                    </div>
+
+                    <div class="text">
+                        <p class="p_1">
+                            COMMANDEZ VOS <span class="p_1_mode">PIZZA</span>S
+                        </p>
+                        <p class="p_2">
+                            Pour commander un pizza vous devez cliquer sur <span class="p_2_mode1">commander</span> dans
+                            liste
+                            des categories de pizza en flottant sur l'image.Pour accéder à la liste des catégories de
+                            pizza soit :
+                            <br><br>
+                            <span class="p_2_mode1">1)</span> <span class="p_2_mode2">vous Cliquez dans le menu
+                                principal, sur categories</span><br><br>
+                            <span class="p_2_mode1">2)</span> <span class="p_2_mode2">vous defilez la page jusqu'à la
+                                partie d'exposition des pizzas
+                                titrée <span class="p_2_mode1">MENU SPECIAL</span>
+                            </span>
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contenuSlideTrois" style="display: none;">
+                    <div class="image">
+                        <img src="./image/chef Cuisine/chef-01-removebg-preview.png">
+                    </div>
+
+                    <div class="text">
+                        <p class="p_1">
+                            UNE EQUIPE <span class="p_1_mode">CHALEUREUSE</span>
+                        </p>
+                        <p class="p_2">
+                            Notre équipe est toujours à l'ecoute de vos désires et autres demandes spéciales
+                            sur commande, vous accueille avec le souris dans une ambiance détendue et très
+                            conviviale.<br>
+                            <span class="p_2_mode1">Notre objetif :</span>est de vous fourni une dégustation <span
+                                class="p_2_mode2">irréprochable</span>
+                            !
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contenuSlideQuatre" style="display: none;">
+
+                    <div class="text" class="text" style="margin-left:5%;">
+                        <p class="p_1">
+                            UN SAVOIR FAIRE ARTIS<span class="p_1_mode">ANA</span>L
+                        </p>
+                        <p class="p_2">
+                            Nos pizzas sont authentiques et savoureuses ! préparées artisanalement à partir d'une
+                            sélection rigoureuses des produits et des <span class="p_2_mode2">ingrédients</span>
+                            pour la qualité gustative, elle sont egalement valorisées par le savoir-faire et
+                            l'experience
+                            de notre equipe.
+
+                        </p>
+                    </div>
+
+                    <div class="image">
+                        <img src="./image/banner/pizza-5.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+
+        </div>
+
+
+    </div>
+
+    <div class="contenuCorps">
+
+        <div class="barCommande">
+
+            <div id="commandeItemUn">
+                <div class="icon"><img src="./image/icon/icon-1.png"></div>
+                <div class="text">
+                    <h2>Commandez votre pizza</h2>
+                </div>
+            </div>
+
+            <div id="commandeItemDeux">
+                <div class="icon"><img src="./image/icon/icon-2.png"></div>
+                <div class="text">
+                    <h2>Livraison ou sur place</h2>
+                </div>
+            </div>
+
+            <div id="commandeItemTrois">
+                <div class="icon"><img src="./image/icon/icon-3.png"></div>
+                <div class="text">
+                    <h2>Délicieuse recette</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="pizzaVIP">
+            <h1>LES VIP DU JOUR</h1>
+            <div class="VIP">
+                <div>
+                    <img src="./image/pizza/pizza-8.jpg">
+                    <h3>La Margherita</h3>
+                    <p>25.5$</p>
+                </div>
+
+                <div>
+                    <img src="./image/pizza/pizza-28.jpeg">
+                    <h3>La Pizza Napolitaine</h3>
+                    <p>25$</p>
+                </div>
+
+                <div>
+                    <img src="./image/pizza/pizza-16.jpeg">
+                    <h3>La quatre fromages</h3>
+                    <p>23.5$</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="menuSpecial">
+            <h1>MENU SPECIAL</h1>
+
+            <div class="galleryCategies">
+                <div class="categories">
+                    <ul>
+                        <li class="VIPBtn" ><button id="VIPBtn">VIP</button></li>
+                        <li class="MOYENBtn"><button id="MOYENBtn">MOYEN</button></li>
+                        <li class="NORMALBtn"><button id="NORMALBtn">NORMAL</button></li>
+                    </ul>
+                </div>
+
+               <div class="gallery">
+                    <div class="galleryVIP" id="gallery">
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-28.jpeg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Margherita</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-1.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Quatre fromages</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-2.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>L'Hawaienne</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-11.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Savoyarde</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-4.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Reine</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,jambon.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-5.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Calzone</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> :sauce Tomate,oeufs,jambon.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-6.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La pizza royale</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : jambon,fromage,olive noires.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-7.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Sicilienne</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-9.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Marinara</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,d'ail,d'huile d'olive.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="galleryMoyen" style="display: none;" id="gallery">
+
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-29.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Capricciosa</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : fromages,jambon,champignons.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-3.jpg"></div>
+                                <div class="text">
+                                    <div>
+                                        <h3>La Napolitaine</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : d;arigan,mozzarella,d'anchois.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-13.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Diavola</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,salami.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                      
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-14.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Romaine</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-8.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>L'Hawaienne</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-15.jpeg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La salami</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : huile olive,mozzarella,tomate.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                      
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-16.jpeg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Fuggazzeta</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Medium</p>
+                                        <p><span class="ingredients">Ingrédients</span> : oignon,mozzarella,origan.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-17.webp"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Montagnarde</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-18.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Focaccia à l'ail</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="galleryNormal" style="display: none;" id="gallery">
+
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-19.webp"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Raclette</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-20.jpg"></div>
+                                <div class="text">
+                                    <div>
+                                        <h3>La deep dish pizza</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-21.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La pizza au saumon fumé</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                       
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-22.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La chevre miel</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-23.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Marinara</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-24.webp"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Sicilienne</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="box">
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-25.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Capricciosa</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-26.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Diavola</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxItem">
+                                <div class="image"><img src="./image/pizza/pizza-27.jpg"></div>
+                                <div class="text">
+
+                                    <div>
+                                        <h3>La Romaine</h3>
+                                        <p><span class="ingredients">Genres</span> : pizza de la cuisine napolitaine</p>
+                                        <p><span class="ingredients">Taille</span> : Large</p>
+                                        <p><span class="ingredients">Ingrédients</span> : Tomate,mozzarella,basilic.....
+                                        </p>
+                                        <p>---------------------------------------------------------</p>
+                                        <p>
+                                            <span class="montant">$25.5</span>
+                                            <button class="commander"><a href="./commander.html">commander</a></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div> 
+
+            <div class="parallaxEffet">
+                <div class="text">
+                    <p>"Si vous n'êtes pas celui qui cuisine, restez à l'ecart et complimentez le chef ."</p>
+                    <p>Michael Strahan</p>
+                </div>
+            </div>
+        
+            
+        <div class="chefCuisine">
+            <h2>Rencontrez nos experts</h2>
+            <h1><span>Nos meilleurs cuisiniers</span></h1>
+            <div class="image">
+                <div><img src="./image/chef Cuisine/chef-01-removebg-preview.png"></div>
+                <div><img src="./image/chef Cuisine/chef-02-removebg-preview.png"></div>
+                <div><img src="./image/chef Cuisine/chef-03-removebg-preview.png"></div>
+            </div>
+        </div>
+
+
+         <footer class="footer">
+
+            <div class="footerInfo">
+
+                <div class="apropos" id="box">
+                    <h3>APROPOS</h3>
+                    <hr>
+                    <p>
+                        Nous sommes une equipe travaillant pour le bien-être de la société,
+                       offrant des différentes services dans le domaine d'aliment de qualité .
+                    </p>
+                </div>
+
+                 <div class="abonne" id="box">
+                    <h3>ABONNÉ</h3>
+                    <hr>
+                    <form>
+                        <input type="email" name="mail" placeholder="Saisissez votre adresse mail" id="mailAbonne"><br>
+                        <p style="display: none; color: red; font-size: 15px;" id="abonne">veillez saisir votre email
+                            SVP
+                        </p>
+                        <input type="submit" value="Abonnez-vous">
+                        <div class="socialIcon"> 
+                            <div id="boxI"><div >Retrouvez-nous sur facebook</div> <div><i class="fab fa-facebook-f"></i></div></div>
+                            <div id="boxI"><div>Notre channel youtube</div><div><i class="fab fa-youtube"></i></div></div>
+                            <div id="boxI"><div>Suivez-nous sur instagram</div><div><i class="fab fa-instagram"></i></div></div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact" id="box">
+                    <h3>CONTACT</h3>
+                    <hr>
+                    <p>charlotincarlowensky@gmail.com</p>
+                    <p>+50944069411</p>
+                </div>
+
+               <div class="horaire" id="box">
+                    <h3>HORAIRE</h3>
+                    <hr>
+                    <p>Lundi :8h:AM-9h:PM</p>
+                    <p>Mardi :8h:AM-9h:PM</p>
+                    <p>Mercredi :8h:AM-9h:PM</p>
+                    <p>Jeudi :8h:AM-9h:PM</p>
+                    <p>Vendredi :8h:AM-9h:PM</p>
+                    <p>Samedi :8h:AM-4h:PM</p>
+
+                </div> 
+            </div> 
+
+             <div class="footerBottom">
+                <hr>
+                <p>Tous droits réservés © 2021
+                    <span class="logo">
+                        <span class="R">R</span><span class="A">A</span><span class="L">L</span><span class="O">O</span>
+                        <span class="T">T</span><span class="C">C</span><span class="H">H</span><span
+                            class="I">I</span><span class="N">N</span>
+                        <span><img src="./image/pizza-1.png" id="logo"></span>
+                        <span class="_P">P</span><span class="_I">I</span><span class="_Z">Z</span><span
+                            class="_Z">Z</span><span class="_A">A</span>
+                    </span>
+                </p>
+            </div> 
+        </footer>  
+    </div>
+    <script src="./javascript/slider.js"></script>
+    <script src="./javascript/index.js"></script>
+    <script src="./javascript/mobileFomat.js"></script>
+</body>
+
+</html>

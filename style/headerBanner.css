@@ -1,0 +1,274 @@
+
+.headerBanner
+{
+    background:#15110f;
+    height: 100vh;
+}
+
+.logo
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+.logo:hover
+{
+    letter-spacing: 1px;
+}
+
+.R,.A,.L,.O,.T,.C,.H
+{
+    color:#fde284;
+}
+.I,.N,._P,._I
+{
+    color:#d09862;
+}
+
+._Z,._Z,._A
+{
+    color: #783a3a;
+}
+
+#logo
+{
+    width: 60px;
+}
+
+#barMenu 
+{
+    text-align: right;
+    font-size: 23px;
+    margin-bottom: 5%;
+}
+
+#barMenu ul li
+{
+    display:inline-block
+}
+
+#barMenu a,#barMenu li
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+#barMenu a:hover
+{
+    color:#fde284;
+}
+
+.banner
+{
+  width: 100%;
+}
+
+.contenuSlide
+{
+  display: flex; 
+}
+
+.image
+{
+    margin-left: 40px;
+    animation: slide 2s ease;
+}
+
+@keyframes slide
+{
+ 0%
+ {
+   transform: scale(1.1);
+ }
+
+}
+
+.text 
+{
+    margin-left: 10px;
+    width: 50%;
+}
+ 
+
+.text .p_1
+{
+    font-size: 40px;
+    color: white;
+    font-family:inherit;
+}
+
+.p_1_mode,.p_2
+{
+    color:#fde284;
+}
+
+.p_2
+{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p_2_mode1
+{
+  color: #d40114;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p_2_mode2
+{
+  color: #8da62f;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p_2_mode3
+{
+    font-size: 50px;
+  color: #f49f04;
+}
+
+#S2
+{
+    margin-left: 5%;
+}
+
+.banner button {
+    padding: 20px;
+    border: none;
+    background: #8da62f;
+    color: #783a3a;
+    position: absolute;
+    top: 50%; 
+}
+
+.next
+{
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 96.5%;
+}
+
+.prev
+{
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 96.5%;
+}
+
+.bars
+{
+   margin-right: 5%;
+   display: none;
+}
+
+.bars button
+{
+   background: none;
+   border: none;
+}
+
+
+
+@media(max-width: 800px)
+{
+
+.headerBanner
+ {
+     width: 100%;
+     height: auto;
+ } 
+
+.bars
+{
+    display: flex;
+    justify-content:flex-end;
+    padding: 5% 5% 3% 0;
+}   
+.bars i
+{
+    color: white;
+    font-size: 35px;
+}
+
+.logo 
+{
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+
+#barMenu
+{
+    display: none;
+    text-align: center;
+    background: #d670101c;
+}
+
+#barMenu ul li
+{
+    display:block;
+    background: #d40114;
+    margin-bottom: 3%;
+    font-size: 25px;
+} 
+
+.banner
+{
+   width: 85%;
+}
+
+.next
+{
+    display: none;
+}
+
+.prev
+{
+    display: none;
+}
+.contenuSlide,.contenuSlideUn,.contenuSlideDeux,.contenuSlideTrois,.contenuSlideQuatre
+{
+  flex-direction:column ;
+}
+.image
+{
+    margin: 0;
+    padding: 0;
+}
+
+.image img
+{
+   width: 100%; 
+}
+
+.text 
+{
+    margin: 0;
+    padding: 3%;
+    width: 100%;
+    text-align: justify;
+}
+
+.text .p_1
+{
+    font-size: 25px;
+    text-align: center;
+}
+
+.p_2
+{
+    font-size: 23px;
+}
+
+.p_2_mode3
+{
+    font-size: 30px;
+}
+
+#S2
+{
+    margin-left: 0;
+}
+
+}

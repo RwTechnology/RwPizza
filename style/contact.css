@@ -1,0 +1,86 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.headerBanner
+{
+    background:#15110f;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.contenuContact
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.formulaire
+{
+    width: 50%;
+    margin-top: 5%;
+}
+hr
+{
+    margin-bottom: 5%;
+}
+
+.formulaire form input[type="text"],input[type="email"],textarea
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    font-size: 15px;
+    padding: 17px;
+    border-radius: 5px;
+    border: none;
+    border: 1px gray solid;
+    outline: none;
+}
+
+form p
+{
+    margin-bottom: 5%;
+   color: red;
+}
+
+.formulaire form input[type="submit"]
+{
+    width: 20%;
+    padding: 10px;
+    background: #d40114;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media(max-width: 800px)
+{
+    .contenuContact
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .contenuContact h1
+    {
+        font-size: 30px;
+    }
+
+    .formulaire
+{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.formulaire form input[type="submit"]
+{
+    width: 25%;
+}
+}

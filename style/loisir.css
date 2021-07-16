@@ -1,0 +1,116 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bannerLoisir
+{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+.text
+{
+    font-size: 25px;
+    margin: 5% 0 5% 0;
+}
+
+#p1
+{
+    color: #2f4257;
+}
+#p2
+{
+    color: #62208d;
+}
+
+.contenuLoisir
+{
+    width: 100%;
+}
+
+.football h1,.plage h1,.intelligence h1,.video h1,.musique h1
+{
+    text-align: center;
+    color: #48414e;
+}
+
+.image
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.image div img
+{
+  width: 100%;
+}
+
+.image div
+{
+  width: 30%;
+}
+
+.image div:hover
+{
+    cursor: pointer;
+    transform-style:preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+
+@media(max-width: 800px)
+{
+
+    body
+    {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .bannerLoisir
+    {
+       flex-direction: column;
+       width: 98%;
+       justify-content: space-between;
+    }
+
+    .bannerLoisir .image
+    {
+    width: 100%;
+    }
+
+    .bannerLoisir .text
+    {
+    width: 95%;
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .image
+    {
+       flex-direction: column;
+       width: 100%;
+    }
+
+    .text 
+    {
+        margin: 0 ;
+        width: 100%;
+    }
+
+
+    .image div
+   {
+     width: 100%;
+   }
+
+}

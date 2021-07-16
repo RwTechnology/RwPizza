@@ -1,0 +1,327 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.barCommande
+{
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fde284;
+    height: 45vh;
+    font-size: 15px;
+    width: 100%;
+}
+
+#commandeItemUn,#commandeItemDeux,#commandeItemTrois
+{
+   width: 25%;
+}
+
+.barCommande .icon
+{
+  width: 70%;
+}
+
+.barCommande .text
+{
+  width: 80%;
+}
+
+  .barCommande #commandeItemUn .icon img
+{
+    width: 100%;
+    margin-left: 10%;
+}
+
+.barCommande #commandeItemDeux .icon img
+{
+    width: 60%;
+    margin-left: 25%;
+}  
+
+ .barCommande #commandeItemTrois .icon img
+{
+    width: 60%;
+    margin-left: 30%;
+}
+
+
+.pizzaVIP h1,#menuSpecial h1
+{
+   text-align: center;
+   margin-bottom: 5%;
+} 
+
+.VIP
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.VIP div 
+{
+   width: 30%;
+   background:#15110f;
+}
+
+.VIP div:hover
+{
+  background-color: #17171d;
+  transform-style:preserve-3d;
+  transform: scale(1.02);
+  transition: all ease 0.3s;
+}
+
+
+.VIP div:hover  h3
+{
+  color: #d40114;
+  transition: all ease 0.5s;
+}
+
+.VIP div:hover  p
+{
+  color: #fde284;
+  transition: all ease 0.5s;
+}
+
+.VIP div img
+{
+   width: 100%;
+}
+
+.VIP div h3
+{
+   color: #fde284;
+   margin-left: 20px;
+}
+
+
+.VIP div p
+{
+  color: #8da62f;
+  text-align: right;
+  margin-right: 50px;
+  font-size: 23px;
+}
+
+.galleryCategies
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categories 
+{
+  width: 25%;
+}
+
+.categories ul li
+{
+  list-style: none;
+}
+
+.categories ul li button
+{
+  width: 20%;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  background: none;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.categories ul li
+{
+  border-radius: 5px;
+}
+
+.categories ul .VIPBtn
+{
+background:#fde284; 
+}
+
+.categories ul li:hover
+{
+background:#fde284; 
+}
+/* ------ */
+.box {
+  display: flex;
+}
+
+.box .boxItem {
+  position: relative;
+  width: 350px;
+  height: 240px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-bottom: 5%;
+}
+
+.box .boxItem .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .boxItem .image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #131608;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+.box .boxItem:hover .image:before {
+  opacity: 1;
+
+}
+
+.box .boxItem .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.box .boxItem .text{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 2px;
+  align-items: flex-end;
+}
+
+.box .boxItem .text div {
+  color: #fff;
+  transition: 0.5s;
+  margin-bottom: 6px;
+  font-size: 15px;
+  transform: translateY(300px);
+}
+
+.box .boxItem .text div p{
+    color: #fde284;
+}
+
+.box .boxItem:hover .text div {
+  transform: translateY(-1px);
+  transition-delay: 0.2s;
+}
+
+
+ .boxItem:hover
+{
+  transform-style:preserve-3d;
+  transform: scale(1.02);
+  transition: all ease 0.3s;
+}
+
+.commander
+{
+  margin-left: 60%;
+  padding: 5px;
+  background: #783a3a;
+  border-radius: 5px;
+  
+}
+
+.commander a
+{
+  text-decoration: none;
+  color: #fde284;
+}
+
+.montant
+{
+  color: #8da62f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ingredients
+{
+  color: #d40114;
+  font-weight: bold;
+}
+
+
+
+
+
+.parallaxEffet
+{
+  background: url('../image/banner/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  height: 50vh;
+}
+
+.parallaxEffet div
+{
+  width: 60%;
+}
+
+.chefCuisine 
+{
+  background: #fde284;
+}
+
+.chefCuisine h1,h2
+{
+  text-align:center ;
+}
+
+.chefCuisine  h2
+{
+  color: #d40114;
+}
+
+  .chefCuisine  div
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+
+.chefCuisine  div img
+{
+  width: 350px;
+}

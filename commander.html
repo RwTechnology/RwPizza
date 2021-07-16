@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/pizza-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/commande.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+    <title>RALOTCHIN-COMMANDE</title>
+</head>
+
+<body>
+    <div class="EspaceDeCommande">
+        <h2 class="CommandePizza">Commandez votre PIZZA</h2>
+        <form id="formulaireOne">
+            <div class="choixCategorie">
+                <label for="">Categories : </label>
+                <span>VIP</span><input type="radio" value="VIP" name="Categorie">
+                <span>MOYEN</span><input type="radio" value="MOYEN" name="Categorie">
+                <span>NORMAL</span><input type="radio" value="NORMAL" name="Categorie">
+            </div>
+            <div class="choixPizza">
+                <div>
+                    <select id="VIP">
+                        <option>Selectionner votre pizza VIP</option>
+                        <option value="La Margherita">La Margherita</option>
+                        <option value="La Quatre fromages">La Quatre fromages</option>
+                        <option value="L'Hawaienne">L'Hawaienne</option>
+                    </select>
+
+                    <select id="MOYEN">
+                        <option>selectionner votre pizza MOYEN</option>
+                        <option value="La Capricciosa">La Capricciosa</option>
+                        <option value="La Diavola">La Diavola</option>
+                        <option value="La Romaine">La Romaine</option>
+                    </select>
+
+                    <select id="NORMAL">
+                        <option>selectionner votre pizza NORMAL </option>
+                        <option value="La deep dish pizza">La deep dish pizza</option>
+                        <option value="La pizza au saumon fumé">La pizza au saumon fumé</option>
+                        <option value="La chevre miel">La chevre miel</option>
+                    </select>
+
+                    <p class="erreur" style="color: red;"></p>
+                    <label for="" class="quantite">QUANTITE</label>
+                    <input type="number" id="saisie" class="quantite" min="1">
+
+                    <p class="erreur" style="color: red;"></p>
+                </div>
+                <div class="pizzaSelect">
+                    <img src="">
+                    <p class="infoPizza">
+                        <span class="nomPizza"></span>
+                        <span class="PrixPizza"></span>$
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <button type="submit" id="check"><i class="fas fa-check"></i> valider</button>
+        </form>
+
+            <hr>
+            <form id="formulaireTwo">
+            <div class="balance">
+
+                <p class="sommePizza">
+                    Somme
+                    <span>-----------<span id="trait">--------------------------------------</span> :</span>
+                    <span id="somme">00.00</span>$
+                </p>
+                <p class="erreur" style="color: red;"></p>
+                
+                <div class="LivraisonRetrait">
+
+                    <div class="typeCommande">
+                        <label for="">Type de commande : </label>
+                        <span>SUR PLACE</span><input type="radio" value="RETRAIT" name="commande">
+                        <span>LIVRASON</span><input type="radio" value="LIVRASON" name="commande">
+                    </div>
+
+                    <div>
+                        <label for="">mode paiement : </label>
+                        <span><img src="./image/icon/moncash2.png" alt=""></span><input type="radio" value="Moncash" name="paiement">
+                        <span><i class="fab fa-cc-mastercard"></i> <i class="fab fa-cc-visa"></i> <i
+                                class="fab fa-cc-paypal"></i></span>
+                        <input type="radio" value="Carte credit" name="paiement">
+                    </div>
+                </div>
+                <div class="infoSup">
+                    <div id="infoSup">
+                        <input type="text" placeholder="votre nom complet"  id="saisie">
+                         <p class="erreur" style="color: red;"></p>
+                        <input type="text" placeholder="votre adresse" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                        <input type="text" placeholder="votre numero telephone" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                    </div>
+
+                    <div id="infoSup">
+                        <input type="email" placeholder="Saisie votre email" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                        <input type="tel" placeholder="votre numero telephone" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                        <input type="tel" placeholder="votre code" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                    </div>
+
+                    <div id="infoSup">
+                        <input type="text" placeholder="Saisie votre email" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                        <input type="tel" placeholder="votre numero telephone" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                        <input type="tel" placeholder="votre numero carte" id="saisie">
+                        <p class="erreur" style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+            <p class="erreur" style="color: red;"></p>
+            <div class="bouton">
+                <button type="reset" onload=""><i class="fas fa-times"></i>Annuler</button> 
+                <button type="submit" title="double click pour commander"><i class="fas fa-shopping-basket"></i>commander</button>
+            </div>
+        </form>
+    </div>
+    <script src="./javascript/commande.js"></script>
+</body>
+
+</html>

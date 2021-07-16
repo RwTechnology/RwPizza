@@ -1,0 +1,58 @@
+body
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+.pizzarie-1
+{
+    width: 80%;
+    margin: 0 0 10% 10%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px 0px #83817e;
+}
+
+.pizzarieMap
+{
+    width: 40%;
+}
+
+.imagePizzarie
+{
+    width: 50%;
+}
+
+.imagePizzarie img
+{
+    width: 100%;
+}
+
+h1
+{
+    text-align: center;
+}
+
+iframe
+{
+    border: 0;
+}
+
+@media(max-width: 800px)
+{
+    .pizzarie-1
+    {
+       flex-direction: column;
+       width: 100%;
+       margin: 0;
+    }
+
+    .pizzarieMap,.imagePizzarie
+    {
+        width: 100%;
+    }
+
+}
